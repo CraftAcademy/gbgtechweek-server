@@ -4,7 +4,7 @@ RSpec.describe 'Contacts API endpoint' do
 
   it 'returns a list of contacts' do
     get '/api/contacts'
-
+    binding.pry
     expect(JSON.parse(response.body)['contacts'][0]['name']).to eq contact.name
     expect(JSON.parse(response.body)['contacts'][0]['email']).to eq contact.email
     expect(JSON.parse(response.body)['contacts'][0]['company']).to eq contact.company
