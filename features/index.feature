@@ -8,6 +8,6 @@ Feature: Index page, contact form
     And I fill in "Company" with "Amber Inc."
     And I fill in "Role" with "President and CEO"
     And I fill in "Location" with "Holtermansgatan 1"
-    And I fill in "Info" with "I'm the best"
+    And I fill in "Tell us about yourself!" with "I'm the best"
     And I click "Submit"
     Then I should see "Thanks! See you on the front end."

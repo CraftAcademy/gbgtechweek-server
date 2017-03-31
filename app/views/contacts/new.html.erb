@@ -1,4 +1,10 @@
 <h1>Form or whatever</h1>
 <%= form_for @contact do |f| %>
-  <%= f.text_field :name, placeholder: 'Name' %>
+  <%= f.text_field :name, placeholder: 'Name', autofocus: true %>
+  <%= f.email_field :email, placeholder: 'Email' %>
+  <%= f.text_field :company, placeholder: 'Company' %>
+  <%= f.text_field :role, placeholder: 'Role' %>
+  <%= f.text_field :location, placeholder: 'Location' %>
+  <%= f.text_field :twitter, placeholder: 'Twitter' %>
+  <%= f.text_area :info, placeholder: 'Tell us about yourself!' %>
 <% end %>
