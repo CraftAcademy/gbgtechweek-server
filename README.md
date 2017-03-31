@@ -76,7 +76,8 @@ Coveralls        |         Code coverage specs
     generate.routing_specs false
     generate.controller_specs false
   end
-```
+    ```
+
 Here we're turning off a bunch of auto-generators for things we'll be creating while we build the app. We've turned them all off, but we might want to leave some on if our project is complex or if we are going to have a lot of helpers, etc.
 
 - `bundle exec rspec` --> this should work now and return no errors (and also no tests, because you haven't written any)
