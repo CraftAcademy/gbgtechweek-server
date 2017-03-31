@@ -5,6 +5,8 @@ FactoryGirl.define do
     location 'Here'
     company 'Nils Co.'
     role 'Janitor'
+    twitter '@janitor'
+    info 'So great'
 
   end
 end
