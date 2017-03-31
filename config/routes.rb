@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'index/index'
-
-  root 'index#index'
+  resources :contacts, only: [:index, :new]
+  root 'contacts#new'
 end
