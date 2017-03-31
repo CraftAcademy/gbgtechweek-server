@@ -17,3 +17,7 @@ end
 Then(/^I should not see "([^"]*)"$/) do |content|
   expect(page).not_to have_content content
 end
+
+And(/^there should be "([^"]*)" contact in the database$/) do |count|
+  expect(Contact.all.count).to eq count.to_i
+end

@@ -11,3 +11,4 @@ Feature: Index page, contact form
     And I fill in "Tell us about yourself!" with "I'm the best"
     And I click "Submit"
     Then I should see "Thanks! See you on the front end."
+    And there should be "1" contact in the database
