@@ -16,4 +16,10 @@ RSpec.describe Contact, type: :model do
     it { is_expected.to validate_presence_of :name}
   end
 
+  describe 'custom validations' do
+    it 'has a random picture assigned' do
+      expect(FactoryGirl.create(:contact).image).not_to be nil
+    end
+  end
+
 end
