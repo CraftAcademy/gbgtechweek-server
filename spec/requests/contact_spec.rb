@@ -11,5 +11,6 @@ RSpec.describe 'Contacts API endpoint' do
     expect(JSON.parse(response.body)['contacts'][0]['location']).to eq contact.location
     expect(JSON.parse(response.body)['contacts'][0]['twitter']).to eq contact.twitter
     expect(JSON.parse(response.body)['contacts'][0]['info']).to eq contact.info
+    expect(JSON.parse(response.body)['contacts'][0]['image']).to eq contact.image
   end
 end

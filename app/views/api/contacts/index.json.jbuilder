@@ -6,4 +6,5 @@ json.contacts @contacts.each do |contact|
   json.twitter contact.twitter
   json.location contact.location
   json.info contact.info
+  json.image contact.image
 end
