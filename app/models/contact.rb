@@ -5,6 +5,6 @@ class Contact < ApplicationRecord
   private
 
   def random_image
-    self.image = %w{'/moutain.jpg', '/river.jpg', '/ocean.jpg'}
+    self.image = %w{'/images/desert.jpg', '/images/pine.jpg', '/images/hills.jpg', '/images/ocean.jpg', '/images/snow.jpg', '/images/stars.jpg'}
   end
 end
