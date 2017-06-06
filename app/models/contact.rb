@@ -5,6 +5,7 @@ class Contact < ApplicationRecord
   private
 
   def random_image
-    self.image = %w{https://address-book-demo.herokuapp.com/images/desert.jpg https://address-book-demo.herokuapp.com/images/pine.jpg https://address-book-demo.herokuapp.com/images/hills.jpg https://address-book-demo.herokuapp.com/images/ocean.jpg https://address-book-demo.herokuapp.com/images/snow.jpg}.sample
+    image = %w{desert.jpg pine.jpg hills.jpg ocean.jpg snow.jpg}.sample
+    self.image = 'https://ca-address-book.herokuapp.com/images/' + image
   end
 end
