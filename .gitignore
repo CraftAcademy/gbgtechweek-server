@@ -42,3 +42,5 @@ bower.json
 
 # Ignore Ruby Mine files
 .idea/
+
+address-book
