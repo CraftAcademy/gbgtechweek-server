@@ -11,7 +11,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'dotenv'
 gem 'rack-cors'
-gem 'active_model_serializers', '~> 0.8.1'
+gem 'active_model_serializers', '~> 0.10.2'
 
 group :development, :test do
   gem 'listen', '~> 3.0.5'
