@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background: #f28e24;
+    text-align: center;
+    font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+.row {
+    max-width: 90rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.log-in-form {
+    border: 1px solid #cacaca;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px 0 #2E2F30}
+
+.button {
+    background-color: #f28e24;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.ca-logo {
+    height: 8em;
+    width: auto;
+}

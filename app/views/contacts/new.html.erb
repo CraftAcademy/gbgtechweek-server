@@ -1,17 +1,15 @@
 <div class="row ">
   <div class="medium-6 medium-centered large-4 large-centered columns log-in-form">
-
+    <%= image_tag 'https://cdn.rawgit.com/CraftAcademy/craft-assets/gh-pages/images/logo/basic-logo-450X450.png', class: 'ca-logo' %>
     <%= form_for @contact do |f| %>
       <div class="row column">
         <h4 class="text-center">Add your contact information</h4>
-        <!--<label>Email-->
-          <!--<input type="text" placeholder="somebody@example.com">-->
         <%= f.text_field :name, placeholder: 'Name', autofocus: true %>
         <%= f.email_field :email, placeholder: 'Email' %>
         <%= f.text_field :company, placeholder: 'Company' %>
         <%= f.text_field :role, placeholder: 'Role' %>
         <%= f.text_field :location, placeholder: 'Location' %>
-        <%= f.text_field :twitter, placeholder: 'Twitter' %>
+        <%= f.text_field :twitter, placeholder: 'Twitter (please omit the @ sign)' %>
         <%= f.text_area :info, placeholder: 'Tell us about yourself!' %>
         <%= f.submit 'Submit', class: 'button expanded' %>
       </div>

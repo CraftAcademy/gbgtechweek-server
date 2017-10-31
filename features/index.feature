@@ -4,7 +4,7 @@ Feature: Index page, contact form
     Given I am on the index page
     When I fill in "Name" with "Amber"
     And I fill in "Email" with "amber@amber.com"
-    And I fill in "Twitter" with "heyamberwilkie"
+    And I fill in "Twitter (please omit the @ sign)" with "heyamberwilkie"
     And I fill in "Company" with "Amber Inc."
     And I fill in "Role" with "President and CEO"
     And I fill in "Location" with "Holtermansgatan 1"
