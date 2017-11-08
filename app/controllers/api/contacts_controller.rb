@@ -6,6 +6,11 @@ class Api::ContactsController < ApplicationController
     render json: @contacts
   end
 
+  def show
+    @contact = Contact.find(params[:id])
+    render json: @contact
+  end
+
   protected
 
   def set_default_response_format
