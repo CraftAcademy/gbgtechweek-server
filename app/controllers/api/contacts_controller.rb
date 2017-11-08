@@ -2,13 +2,13 @@ class Api::ContactsController < ApplicationController
   before_action :set_default_response_format
 
   def index
-    @contacts = Contact.all
-    render json: @contacts
+    contacts = Contact.all
+    render json: contacts
   end
 
   def show
-    @contact = Contact.find(params[:id])
-    render json: @contact
+    contact = Contact.find(params[:id])
+    render json: contact
   end
 
   protected
